@@ -3,6 +3,11 @@ body * {
 }
 
 /* common */
+.cinta_nove {
+  width: 95%;
+  margin: auto;
+}
+
 .cinta_otto {
   width: 85%;
   margin: auto;
@@ -13,8 +18,20 @@ body * {
     margin: auto;
 }
 
+.back_white {
+  background-color: white;
+}
+
+.text_white {
+  color: white;
+}
+
 .padding_top_five {
   padding-top: 5px;
+}
+
+.small_p {
+  font-size: 12px;
 }
 
 a {
@@ -36,8 +53,14 @@ a:hover {
 }
 
 /* HEADER */
+header {
+  background-image: url(../img/jumbo.svg);
+}
+
+/* nav */
 .top_nav_bar {
-  padding: 5px 0;
+  background-color: white;
+  padding-top: 15px;
 }
 
 .logo_home img {
@@ -47,4 +70,48 @@ a:hover {
 
 header nav {
   font-size: 13px;
+}
+
+/*  jumbotron */
+.jumbot h1 {
+  margin-top: 80px;
+  font-size: 58px !important;
+  font-weight: bold !important;
+  line-height: 69.6px;
+  vertical-align: baseline;
+  letter-spacing: -1px;
+}
+
+.text_jumbot {
+  margin-bottom: 75px;
+  font-size: 24px;
+  line-height: 36px;
+  vertical-align: baseline;
+}
+
+.form_box {
+  margin: 75px 0;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+
+h3 > span {
+  color: #006AFF;
+}
+
+#crea_account {
+  color: white;
+  background-color: #006AFF;
+}
+
+#sign_google {
+  position: relative;
+}
+
+#sign_google img {
+  width: 20px;
+  text-align: left !important;
+  vertical-align: middle;
+  position: absolute;
+  left: 5px;
 }

@@ -22,12 +22,21 @@ body * {
   background-color: white;
 }
 
-.text_white {
-  color: white;
+.back_grey {
+  background-color: #F3F5F9;
 }
 
 .padding_top_five {
   padding-top: 5px;
+}
+
+h3 {
+  font-size: 14px !important;
+  line-height: 120% !important;
+}
+
+.text_white {
+  color: white;
 }
 
 .small_p {
@@ -95,7 +104,7 @@ header nav {
   border-radius: 5px;
 }
 
-h3 > span {
+h2 > span {
   color: #006AFF;
 }
 
@@ -114,4 +123,24 @@ h3 > span {
   vertical-align: middle;
   position: absolute;
   left: 5px;
+}
+
+/* section collaborazioni */
+#collaborazioni {
+  padding: 30px 0;
+}
+
+#collaborazioni h3 {
+  color: #5b6987;
+}
+
+.blocco_logo {
+  height: 90px;
+  line-height: 77px;
+  vertical-align:  middle;
+}
+
+.blocco_logo img {
+  width: 100%;
+  height: 100%;
 }

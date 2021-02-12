@@ -2,10 +2,49 @@ body * {
   font-family: 'Inter', sans-serif;
 }
 
+/* common */
 .cinta_otto {
-  width: 80%;
+  width: 85%;
+  margin: auto;
 }
 
 .cinta_sette {
-    width: 70%;
+    width: 75%;
+    margin: auto;
+}
+
+.padding_top_five {
+  padding-top: 5px;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+a:hover {
+  color: #006AFF !important;
+}
+
+.blue_button {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #006AFF;
+  border: none;
+  border-radius: 5px;
+}
+
+/* HEADER */
+.top_nav_bar {
+  padding: 5px 0;
+}
+
+.logo_home img {
+  width: 150px;
+  padding-top: 2px;
+}
+
+header nav {
+  font-size: 13px;
 }

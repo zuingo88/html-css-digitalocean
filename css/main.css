@@ -39,6 +39,10 @@ h3 {
   color: white;
 }
 
+.text_grey {
+  color: #5b6987
+}
+
 .medium_p {
   margin-bottom: 75px;
   font-size: 20px;
@@ -151,4 +155,24 @@ h2 > span {
 .blocco_logo img {
   width: 100%;
   height: 100%;
+}
+
+/* SECTION DEPLOY */
+.blocco_deploy {
+  margin: 40px 0;
+}
+
+#deploy ul li {
+  list-style-type: none;
+  padding-left: 10px;
+  line-height: 40px;
+  border-left: solid 2px lightgrey;
+}
+
+#deploy ul li:hover {
+  border-left: solid 2px #006AFF;
+}
+
+#deploy ul li a:hover {
+  color: black !important;
 }

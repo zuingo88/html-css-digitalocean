@@ -176,3 +176,11 @@ h2 > span {
 #deploy ul li a:hover {
   color: black !important;
 }
+
+/* SECTION DESIGNED */
+.screen img {
+  width: 100%;
+  height: 350px;
+}
+
+/* SECTION FEATURES */

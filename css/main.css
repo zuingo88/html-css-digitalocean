@@ -26,6 +26,10 @@ body * {
   background-color: #F3F5F9;
 }
 
+.back_blue {
+  background-color: blue;
+}
+
 .padding_top_five {
   padding-top: 5px;
 }
@@ -184,3 +188,35 @@ h2 > span {
 }
 
 /* SECTION FEATURES */
+
+/* SECTION SERVICE */
+.riga {
+  width: 100%;
+  line-height: 40px;
+  border-bottom: solid 1px white;
+}
+
+.lista_left .riga:last-child,
+.lista_right .riga:last-child {
+  border-bottom: none;
+}
+
+.riga span {
+  display: inline-block;
+}
+
+.riga .abbr {
+  float: left;
+  width: 20% !important;
+  font-weight: bold;
+}
+
+.riga .region {
+  float: left;
+}
+
+.riga .test_speed {
+  float: right;
+}
+
+/* SECTION START */

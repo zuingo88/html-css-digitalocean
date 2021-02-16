@@ -16,8 +16,8 @@ body * {
 }
 
 .cinta_sette {
-    width: 75%;
-    margin: auto;
+  width: 75%;
+  margin: auto;
 }
 
 section, footer {
@@ -39,7 +39,7 @@ section, footer {
 }
 
 .back_blue {
-   background-image: linear-gradient(to bottom, #0800c2, #0b00b1, #0d01a0, #0e0190, #0e0180);
+  background-image: linear-gradient(to bottom, #0800c2, #0b00b1, #0d01a0, #0e0190, #0e0180);
 }
 
 /* testo */
@@ -90,6 +90,7 @@ h3 {
   font-size: 12px;
 }
 
+/* elementi specifici */
 ul li {
   list-style-type: none;
   text-transform: capitalize;
@@ -102,6 +103,22 @@ a {
 
 a:hover {
   color: #006AFF !important;
+}
+
+a.terms,
+#collaborazioni a,
+#designed a,
+#features a,
+#development a {
+  color: #006AFF !important;
+}
+
+a.terms:hover,
+#collaborazioni a:hover,
+#designed a:hover,
+#features a:hover,
+#development a:hover {
+  color: #0F0091 !important;
 }
 
 .blue_button {
@@ -138,13 +155,33 @@ header {
   box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
+header nav {
+  font-size: 13px;
+}
+
 .logo_home img {
   width: 150px;
   padding-top: 2px;
+  padding-bottom: 10px;
 }
 
-header nav {
-  font-size: 13px;
+header .hamburger {
+  margin-top: 2px;
+  font-size: 20px;
+}
+
+header .hamburger a {
+  padding: 4px;
+  border: solid 2px #006AFF;
+  border-radius: 5px;
+  webkit-box-shadow: 0px 1px 5px 0px #006AFF;
+  -moz-box-shadow: 0px 1px 5px 0px #006AFF;
+  box-shadow: 0px 1px 5px 0px #006AFF;
+}
+
+header .hamburger a:hover {
+  color: white !important;
+  background-color: #006AFF;
 }
 
 /*  jumbotron */
@@ -169,7 +206,7 @@ header nav {
 }
 
 .form_box {
-  margin: 75px 0;
+  margin: 75px auto;
   padding: 20px 15px;
   border-radius: 5px;
 }
@@ -211,20 +248,6 @@ h2 > span {
   height: 100%;
 }
 
-#collaborazioni a,
-#designed a,
-#features a,
-#development a {
-color: #006AFF !important;
-}
-
-#collaborazioni a:hover,
-#designed a:hover,
-#features a:hover,
-#development a:hover {
-  color: #0F0091 !important;
-}
-
 /* SECTION DEPLOY */
 .blocco_deploy {
   margin: 40px 0;
@@ -245,19 +268,38 @@ color: #006AFF !important;
   color: black !important;
 }
 
-/* SECTION DESIGNED, SECTION DEVELOPMENTS */
-.screen, .screen img {
-  width: 100%;
-  height: 350px;
+.blocco_descrizione {
+  margin-bottom: 20px;
 }
 
-.big_arrow {
-  line-height: 350px;
+/* CAROUSEL */
+.screen, .screen img {
+  width: 100%;
+  height: auto;
+}
+
+.blocco_carousel {
+  position: relative;
+}
+
+.big_arrow_left {
+  position: absolute;
+  top: 50%; left: -10%;
+  transform: translateY(-50%);
   font-size: 45px;
   color: #5b6987;
 }
 
-.big_arrow:hover {
+.big_arrow_right {
+  position: absolute;
+  top: 50%; right: -10%;
+  transform: translateY(-50%);
+  font-size: 45px;
+  color: #5b6987;
+}
+
+.big_arrow_left:hover,
+.big_arrow_right:hover {
   color: black;
   cursor: pointer;
 }
@@ -267,8 +309,10 @@ color: #006AFF !important;
   font-weight: bold;
 }
 
+/* SECTION DEVELOPMENT */
 #development .screen {
-    margin-top: 50px;
+  margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 #development .screen img {
@@ -283,6 +327,9 @@ color: #006AFF !important;
 }
 
 /* SECTION FEATURES */
+#features h2 {
+  margin-bottom: 40px;
+}
 
 /* SECTION SERVICE */
 .riga {
@@ -356,4 +403,86 @@ footer .text_grey {
 
 .long_list ul {
   padding-left: 0;
+}
+
+footer .long_list {
+  margin-bottom: 20px;
+}
+
+
+
+/* VERSIONE MOBILE + SM */
+@media all and (max-width: 991px) {
+
+  /* REGOLE RICORRENTI */
+  .cinta_sette {
+    width: 85%;
+    margin: auto;
+  }
+
+  .cinta_otto {
+    width: 95%;
+    margin: auto;
+  }
+
+  section, footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .medium_p {
+    margin-bottom: 20px;
+  }
+
+  /* HEADER */
+  .jumbot h1 {
+    margin-top: 40px;
+    font-size: 35px !important;
+    font-weight: bold !important;
+    line-height: 40px;
+  }
+
+  .text_jumbot {
+    margin-bottom: 20px;
+  }
+
+  .form_box {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  /* SECTION DEPLOY */
+  .blocco_deploy {
+    margin: 20px 0;
+  }
+
+  /* CAROUSEL */
+  [class*=big_arrow_] {
+    font-size: 30px;
+  }
+
+  /* SECTION DEVELOPMENT */
+  #development .screen {
+    margin-top: 20px;
+  }
+}
+
+
+
+/* VERSIONE SM */
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+  /* HEADER */
+  .jumbot h1 {
+    margin-top: 60px;
+    font-size: 50px !important;
+    font-weight: bold !important;
+    line-height: 45px;
+  }
+
+  .form_box {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
 }
